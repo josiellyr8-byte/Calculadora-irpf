@@ -1,4 +1,3 @@
-// Função para calcular o imposto por faixa
 function calcularIR(sal) {
     let imp = 0;
 
@@ -13,17 +12,18 @@ function calcularIR(sal) {
     } else {
         imp = sal * 0.275 - 896.00;
     }
+
     return imp;
 }
 
-// Função da alíquota efetiva
 function efetiva(sal, imp) {
     return (imp / sal) * 100;
 }
 
-// Função principal que roda no botão
 function calcular() {
+
     let sal = parseFloat(document.getElementById("salario").value);
+
     if (isNaN(sal) || sal <= 0) {
         alert("Digite um salário válido!");
         return;
@@ -32,12 +32,23 @@ function calcular() {
     let imposto = calcularIR(sal);
     let aliq = efetiva(sal, imposto);
 
-    document.getElementById("resultado").innerHTML =
-        "Imposto devido: R$ " + imposto.toFixed(2) +
-        "<br>Alíquota efetiva: " + aliq.toFixed(2) + "%";
+    document.getElementById("resultado").innerHTML = `
+        <div class="resultado-box">
+            <h2>Resultado</h2>
+
+            <p>
+                <span>Imposto devido:</span>
+                R$ ${imposto.toFixed(2)}
+            </p>
+
+            <p>
+                <span>Alíquota efetiva:</span>
+                ${aliq.toFixed(2)}%
+            </p>
+        </div>
+    `;
 }
 
-// Função de limpar
 function limpar() {
     document.getElementById("salario").value = "";
     document.getElementById("resultado").innerHTML = "";
