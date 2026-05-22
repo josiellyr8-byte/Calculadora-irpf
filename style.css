@@ -1,20 +1,146 @@
-/* Estilo bem simples só para não ficar feio */
-body {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
     font-family: Arial, sans-serif;
-    margin: 30px;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
 }
 
-input {
-    padding: 5px;
-    margin-top: 10px;
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
-button {
-    padding: 5px 10px;
-    margin: 5px;
+.card{
+    background-color: white;
+    width: 400px;
+
+    padding: 35px;
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+    text-align: center;
 }
 
-#resultado {
-    margin-top: 20px;
+.card h1{
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+.subtitulo{
+    color: #666;
+    margin-bottom: 25px;
+}
+
+label{
+    display: block;
+    text-align: left;
+
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input{
+    width: 100%;
+    padding: 14px;
+
+    border-radius: 10px;
+    border: 2px solid #dbeafe;
+
+    font-size: 16px;
+
+    margin-bottom: 20px;
+
+    transition: 0.3s;
+}
+
+input:focus{
+    border-color: #2563eb;
+    outline: none;
+
+    box-shadow: 0 0 10px rgba(37, 99, 235, 0.3);
+}
+
+.botoes{
+    display: flex;
+    gap: 10px;
+}
+
+button{
+    flex: 1;
+    padding: 12px;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.btn-calcular{
+    background-color: #2563eb;
+    color: white;
+}
+
+.btn-calcular:hover{
+    background-color: #1d4ed8;
+    transform: scale(1.03);
+}
+
+.btn-limpar{
+    background-color: #e5e7eb;
+    color: #333;
+}
+
+.btn-limpar:hover{
+    background-color: #d1d5db;
+    transform: scale(1.03);
+}
+
+#resultado{
+    margin-top: 25px;
+}
+
+.resultado-box{
+    background-color: #eff6ff;
+
+    padding: 20px;
+    border-radius: 15px;
+
+    border-left: 6px solid #2563eb;
+
+    text-align: left;
+}
+
+.resultado-box h2{
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.resultado-box p{
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.resultado-box span{
     font-weight: bold;
 }
