@@ -24,7 +24,7 @@ function calcular() {
 
     let sal = parseFloat(document.getElementById("salario").value);
 
-    if (isNaN(sal) || sal <= 0) {
+    if (isNaNNumber.parseFloat(sal) || sal <= 0) {
         alert("Digite um salário válido!");
         return;
     }
