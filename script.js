@@ -10,7 +10,7 @@ function calcularIR(sal) {
     } else if (sal <= 4664.68) {
         imp = sal * 0.225 - 662.77;
     } else {
-        imp = sal * 0.275 - 896.00;
+        imp = sal * 0.275 - 896;
     }
 
     return imp;
