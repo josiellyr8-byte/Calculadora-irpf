@@ -20,7 +20,7 @@ function calcular() {
 
     let sal = Number.parseFloat(document.getElementById("salario").value);
 
-    if (isNaNNumber.parseFloat(sal) || sal <= 0) {
+    if (isNaN(sal) || sal <= 0) {
         alert("Digite um salário válido!");
         return;
     }
