@@ -1,18 +1,15 @@
 function calcularIR(sal) {
-    let imp = 0;
-
     if (sal <= 2259.2) {
+        return 0;
     } else if (sal <= 2826.65) {
-        imp = sal * 0.075 - 169.44;
+        return sal * 0.075 - 169.44;
     } else if (sal <= 3751.05) {
-        imp = sal * 0.15 - 381.44;
+        return sal * 0.15 - 381.44;
     } else if (sal <= 4664.68) {
-        imp = sal * 0.225 - 662.77;
-    } else {
-        imp = sal * 0.275 - 896;
+        return sal * 0.225 - 662.77;
     }
 
-    return imp;
+    return sal * 0.275 - 896;
 }
 
 function efetiva(sal, imp) {
