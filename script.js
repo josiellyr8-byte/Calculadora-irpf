@@ -9,7 +9,7 @@ function calcularIR(sal) {
         return sal * 0.225 - 662.77;
     }
 
-    return sal * 0.275 - 896.00;
+    return sal * 0.275 - 896;
 }
 
 function efetiva(sal, imp) {
