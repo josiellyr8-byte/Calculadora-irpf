@@ -2,7 +2,6 @@ function calcularIR(sal) {
     let imp = 0;
 
     if (sal <= 2259.2) {
-     
     } else if (sal <= 2826.65) {
         imp = sal * 0.075 - 169.44;
     } else if (sal <= 3751.05) {
