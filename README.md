@@ -96,4 +96,4 @@ A análise foi realizada via **SonarCloud** integrado ao repositório GitHub.
 
 ## 📄 Licença
 
-Este projeto foi desenvolvido para fins acadêmicos — **Disciplina: Qualidade de Software, 2026**.
+Este projeto foi desenvolvido para fins acadêmicos — **Disciplina: Engenharia de Software, 2026**.
