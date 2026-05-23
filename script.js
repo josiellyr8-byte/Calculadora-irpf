@@ -2,7 +2,6 @@ function calcularIR(sal) {
     let imp = 0;
 
     if (sal <= 2259.2) {
-        imp = 0;
     } else if (sal <= 2826.65) {
         imp = sal * 0.075 - 169.44;
     } else if (sal <= 3751.05) {
@@ -22,7 +21,7 @@ function efetiva(sal, imp) {
 
 function calcular() {
 
-    let sal = parseFloat(document.getElementById("salario").value);
+    let sal = Number.parseFloat(document.getElementById("salario").value);
 
     if (isNaNNumber.parseFloat(sal) || sal <= 0) {
         alert("Digite um salário válido!");
